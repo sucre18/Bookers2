@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'top' => 'homes#top'
 
   resources :books, only: [:show, :index, :edit, :create, :destroy]
-  resources :users, only: [:show, :edit, :index]
+  resources :users, only: [:show, :edit, :index, :create]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
